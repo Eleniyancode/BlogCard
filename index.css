@@ -14,7 +14,8 @@ body {
 
 .blog-card {
   width: 400px;
-  height: 540px;
+  height: 500px;
+  margin: 0 auto;
   background-color: white;
   display: grid;
   border-radius: 20px;
@@ -24,49 +25,68 @@ body {
   /* justify-content: center;
   align-items: center;
   flex-direction: column; */
+  position: relative;
 }
 
-#blog-card-image-container {
-/* margin: auto; */
+/* #blog-card-image-container {
+  margin: auto;
 margin-top: 20px;
 margin-left: 25px;
 margin-right: 25px;
 margin-bottom: 10px;
-}
+} */
 
 #blog-card-image {
-border-radius: 20px;
+border-radius: 30px;
+position: absolute;
+ width: 90%;
+ height: 40%;
+/*margin: 0 auto; */
+margin-top: 20px;
+margin-bottom: 25px;
+margin-left: 23px;
 }
 
-.blog-card-text {
-/* margin: auto; */
+/* .blog-card-text {
+margin: auto;
 margin-top: 0px;
 margin-left: 30px;
-/* border: 5px solid; */
-width: 500px;
-}
+border: 5px solid;
+width: px;
+} */
 
 #key-text {
-background-color: yellow;
+background-color: hsl(47, 88%, 63%);
 color: black;
 font-weight: 800;
 padding: 10px;
-font-size: 16px; 
+font-size: 16px;
+width: 70px;
+height: 20px;
+margin-left: 35px;
+position: absolute;
+bottom: 220px;
 /* border: 5px solid;    */
 }
 
 #blog-card-published-date {
-margin-top: 30px;
+margin-top: 20px;
+margin-left: 35px;
 color: hsl(0, 0%, 42%);
 font-weight: 500;
+position: absolute;
+bottom: 160px;
 /* border: 5px solid; */
 }
 
 #blog-card-title {
-margin-top: 20px;
+margin-top: 0px;
 font-size: 22px;
+margin-left: 35px;
 font-weight: 950;
 color: hsl(0, 0%, 7%);
+position: absolute;
+bottom: 120px;
 /* border: 5px solid; */
 }
 
@@ -79,19 +99,32 @@ cursor: pointer;
 #blog-card-description-text {
 font-size: 16px;
 /* border: 5px solid; */
-width: 350px;
+width: 95%;
 word-spacing: 5px;
+margin-left: 35px;
+margin-right: 50px;
 color: hsl(0, 0%, 42%);
 font-weight: 400;
+margin-top: -10px;
+position: absolute;
+bottom: 45px;
+
 
 }
 
 #blog-card-author-name {
 font-weight: 950;
 color: hsl(0, 0%, 7%);
-/* border: 2px solid; */
 margin-top: -35px;
 margin-left: 50px;
+}
+
+.blog-card-author-section {
+  margin-bottom: 10px;
+  /* border: 2px solid; */
+  margin-left: 35px;
+  position: absolute;
+  bottom: 10px;
 }
 
 footer {
